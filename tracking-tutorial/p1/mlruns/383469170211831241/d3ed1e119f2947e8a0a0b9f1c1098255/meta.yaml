@@ -1,0 +1,15 @@
+artifact_uri: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/d3ed1e119f2947e8a0a0b9f1c1098255/artifacts
+end_time: 1728499147403
+entry_point_name: ''
+experiment_id: '383469170211831241'
+lifecycle_stage: active
+run_id: d3ed1e119f2947e8a0a0b9f1c1098255
+run_name: auspicious-hawk-137
+run_uuid: d3ed1e119f2947e8a0a0b9f1c1098255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728499145111
+status: 3
+tags: []
+user_id: renatex

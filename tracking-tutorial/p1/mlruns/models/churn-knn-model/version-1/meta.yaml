@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1728502776609
+current_stage: None
+description: null
+last_updated_timestamp: 1728502776609
+name: churn-knn-model
+run_id: 33f459dd0b254d8fb60a5a6b3cc2e888
+run_link: null
+source: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/33f459dd0b254d8fb60a5a6b3cc2e888/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/33f459dd0b254d8fb60a5a6b3cc2e888/artifacts/model
+user_id: null
+version: 1

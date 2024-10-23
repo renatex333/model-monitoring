@@ -1,0 +1,15 @@
+artifact_uri: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/33f459dd0b254d8fb60a5a6b3cc2e888/artifacts
+end_time: 1728502777093
+entry_point_name: ''
+experiment_id: '383469170211831241'
+lifecycle_stage: active
+run_id: 33f459dd0b254d8fb60a5a6b3cc2e888
+run_name: churn_kn
+run_uuid: 33f459dd0b254d8fb60a5a6b3cc2e888
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728502774362
+status: 3
+tags: []
+user_id: renatex

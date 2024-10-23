@@ -1,0 +1,6 @@
+artifact_location: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241
+creation_time: 1728499144830
+experiment_id: '383469170211831241'
+last_update_time: 1728499144830
+lifecycle_stage: active
+name: churn-exp

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1728502765443
+current_stage: None
+description: null
+last_updated_timestamp: 1728502765443
+name: churn-log-reg-model
+run_id: 5964b28a536644bb83a454a6cdd0f3ad
+run_link: null
+source: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/5964b28a536644bb83a454a6cdd0f3ad/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///home/renatex/Desktop/MLOPS/tracking-tutorial/mlruns/383469170211831241/5964b28a536644bb83a454a6cdd0f3ad/artifacts/model
+user_id: null
+version: 1
