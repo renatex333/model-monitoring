@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  preproc:
+    cmd: python3 src/preproc.py
+    deps:
+    - path: data/bank.csv
+      hash: md5
+      md5: 8d1cc2ceea5c63e650e4d314250efdd3
+      size: 918960
+    - path: src/preproc.py
+      hash: md5
+      md5: ef395b5981ef3551c245a16225b42ecd
+      size: 687
+    outs:
+    - path: data/bank_preproc.parquet
+      hash: md5
+      md5: d891765e072937b464eb5130f18e6ebb
+      size: 82610
+  train:
+    cmd: python3 src/train.py
+    deps:
+    - path: data/bank_preproc.parquet
+      hash: md5
+      md5: d891765e072937b464eb5130f18e6ebb
+      size: 82610
+    - path: src/train.py
+      hash: md5
+      md5: 38f4fdfbad51b37d6116ae7f44c1007d
+      size: 2769
+    outs:
+    - path: models/model.pickle
+      hash: md5
+      md5: 71715622b962420469cdaa51c982481d
+      size: 507268
+    - path: models/ohe.pickle
+      hash: md5
+      md5: 117b522aa9105198b5e3d8ca45acef31
+      size: 2067
+    - path: results/confusion_matrix.png
+      hash: md5
+      md5: 2923a42c7e1b2eee5ee7866200b877f7
+      size: 23129
+    - path: results/model_test_metrics.csv
+      hash: md5
+      md5: 5ca7ef288d7898dc67cb58f651e159f8
+      size: 83
