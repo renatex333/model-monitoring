@@ -26,25 +26,20 @@ As the world constantly changes, a static model may fail to capture new patterns
 
 For classification problems, some key performance metrics are:
 
-- **Accuracy**: Proportion of correctly classified instances out of the total instances.
+- **Accuracy**: Proportion of correctly classified instances out of the total instances.\
+  $$A = \frac{TP + TN}{TP + TN + FP + FN}$$
 
-  \( A = \frac{TP + TN}{TP + TN + FP + FN} \)
+- **Precision**: Proportion of true positive predictions out of all positive predictions.\
+  $$P = \frac{TP}{TP + FP}$$
 
-- **Precision**: Proportion of true positive predictions out of all positive predictions.
+- **Recall (Sensitivity or True Positive Rate)**: Proportion of true positive predictions out of all actual positive instances.\
+  $$R = \frac{TP}{TP + FN}$$
 
-  \( P = \frac{TP}{TP + FP} \)
+- **Specificity**: Proportion of true negative predictions out of all actual negative instances.\
+  $$S = \frac{TN}{TN + FP}$$
 
-- **Recall (Sensitivity or True Positive Rate)**: Proportion of true positive predictions out of all actual positive instances.
-
-  \( R = \frac{TP}{TP + FN} \)
-
-- **Specificity**: Proportion of true negative predictions out of all actual negative instances.
-
-  \( S = \frac{TN}{TN + FP} \)
-
-- **F1 Score**: Combines precision and recall into a single metric.
-
-  \( F = 2 \cdot \frac{P \cdot R}{P + R} \)
+- **F1 Score**: Combines precision and recall into a single metric.\
+  $$F = 2 \cdot \frac{P \cdot R}{P + R}$$
 
 - **Area Under the ROC Curve (AUC-ROC)**: Measures the model's ability to distinguish between positive and negative instances across different thresholds.
 
@@ -52,33 +47,27 @@ For classification problems, some key performance metrics are:
 
 For regression problems, we often use:
 
-- **Mean Absolute Error (MAE)**: Average absolute difference between predicted and actual values.
+- **Mean Absolute Error (MAE)**: Average absolute difference between predicted and actual values.\
+  $$MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$$
 
-  \( MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i| \)
+- **Mean Squared Error (MSE)**: Average squared difference between predicted and actual values.\
+  $$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
 
-- **Mean Squared Error (MSE)**: Average squared difference between predicted and actual values.
+- **Root Mean Squared Error (RMSE)**: Square root of MSE, providing the average magnitude of residuals. It is preferred instead of MSE as RMSE is in the same unit as the target variable.\
+  $$RMSE = \sqrt{MSE}$$
 
-  \( MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \)
-
-- **Root Mean Squared Error (RMSE)**: Square root of MSE, providing the average magnitude of residuals. It is preferred instead of MSE as RMSE is in the same unit as the target variable.
-
-  \( RMSE = \sqrt{MSE} \)
-
-- **R-squared (Coefficient of Determination)**: Proportion of variance in the dependent variable predictable from the independent variables.
-
-  \( R^2 = 1 - \frac{SSR}{SST} \)
+- **R-squared (Coefficient of Determination)**: Proportion of variance in the dependent variable predictable from the independent variables.\
+  $$R^2 = 1 - \frac{SSR}{SST}$$
 
   where SSR is the sum of squared residuals, and SST is the total sum of squares.
 
-- **Mean Absolute Percentage Error (MAPE)**: Average percentage difference between predicted and actual values. It is often preferred instead of RMSE in situations where relative errors are more important than absolute errors. 
+- **Mean Absolute Percentage Error (MAPE)**: Average percentage difference between predicted and actual values. It is often preferred instead of RMSE in situations where relative errors are more important than absolute errors.\
+  $$MAPE = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \times 100$$
 
-  \( MAPE = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{y_i - \hat{y}_i}{y_i} \right| \times 100 \)
+- **Adjusted R-squared**: Adjusts the R-squared value by penalizing the addition of unnecessary predictors, providing a more accurate measure of goodness of fit.\
+  $$\text{Adjusted } R^2 = 1 - \left[ \frac{(1 - R^2) \times (n - 1)}{n - p - 1} \right]$$
 
-- **Adjusted R-squared**: Adjusts the R-squared value by penalizing the addition of unnecessary predictors, providing a more accurate measure of goodness of fit.
-
-  \( \text{Adjusted } R^2 = 1 - \left[ \frac{(1 - R^2) \times (n - 1)}{n - p - 1} \right] \)
-
-  where \( n \) is the sample size and \( p \) is the number of predictors.
+  where $$n$$ is the sample size and $$p$$ is the number of predictors.
 
 ### Ground Truth Evaluation
 
